@@ -109,7 +109,7 @@ CREATE TABLE SEATS (
   seat_id        NUMBER PRIMARY KEY NOT NULL ,
   hall_number    NUMBER NOT NULL,
   rows_char        VARCHAR2(1) ,
-  typeofseat     VARCHAR2(20) ,
+  type_of_seat     VARCHAR2(20) ,
   seatnumber     NUMBER ,
   CONSTRAINT fk_seats FOREIGN KEY (hall_number) REFERENCES HALLS (HALL_NUMBER)
 );
