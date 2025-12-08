@@ -157,15 +157,15 @@ CREATE TABLE SHOW_TIME (
         REFERENCES HALLS (HALL_NUMBER)
 );
 Insert INTO show_time(show_id, movie_id, hall_number , show_date, start_time, end_time)
-Values ('1','T001',1,DATE '2026-07-27',TIMESTAMP'2026-07-27 13:00:00',TIMESTAMP'2026-07-27 15:00:00');
+Values (1,'T001',1,DATE '2026-07-27',TIMESTAMP'2026-07-27 13:00:00',TIMESTAMP'2026-07-27 15:00:00');
 Insert INTO show_time(show_id, movie_id, hall_number , show_date, start_time, end_time)
-Values ('2','T001',3,DATE '2026-07-27',TIMESTAMP'2026-07-27 17:00:00',TIMESTAMP'2026-07-27 19:00:00');
+Values (2,'T001',3,DATE '2026-07-27',TIMESTAMP'2026-07-27 17:00:00',TIMESTAMP'2026-07-27 19:00:00');
 Insert INTO show_time(show_id, movie_id, hall_number , show_date, start_time, end_time)
-Values ('3','T002',1,DATE '2026-07-27',TIMESTAMP'2026-07-27 15:30:00',TIMESTAMP'2026-07-27 17:30:00');
+Values (3,'T002',1,DATE '2026-07-27',TIMESTAMP'2026-07-27 15:30:00',TIMESTAMP'2026-07-27 17:30:00');
 Insert INTO show_time(show_id, movie_id, hall_number , show_date, start_time, end_time)
-Values ('4','T002',3,DATE '2026-07-27',TIMESTAMP'2026-07-27 20:00:00',TIMESTAMP'2026-07-27 22:00:00');
+Values (4,'T002',3,DATE '2026-07-27',TIMESTAMP'2026-07-27 20:00:00',TIMESTAMP'2026-07-27 22:00:00');
 Insert INTO show_time(show_id, movie_id, hall_number , show_date, start_time, end_time)
-Values ('5','T003',2,DATE '2026-07-27',TIMESTAMP'2026-07-27 18:00:00',TIMESTAMP'2026-07-27 20:00:00');
+Values (5,'T003',2,DATE '2026-07-27',TIMESTAMP'2026-07-27 18:00:00',TIMESTAMP'2026-07-27 20:00:00');
 
 
 --TICKETS
