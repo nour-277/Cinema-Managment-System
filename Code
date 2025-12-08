@@ -140,3 +140,29 @@ INSERT INTO SEATS VALUES (18, 3, 'C', 'Normal', 4);
 INSERT INTO SEATS VALUES (19, 3, 'C', 'Normal', 5);
 INSERT INTO SEATS VALUES (20, 3, 'C', 'Normal', 6); 
 INSERT INTO SEATS VALUES (21, 3, 'C', 'Normal', 7);
+
+--SHOW_TIME
+CREATE TABLE SHOW_TIME (
+    SHOW_ID         VARCHAR2(10) NOT NULL,
+    MOVIE_ID        VARCHAR2(10) NOT NULL,
+    HALL_NUMBER     NUMBER(10),
+    START_TIME      TIMESTAMP,
+    END_TIME        TIMESTAMP,
+    Show_DATE            DATE,
+    
+    CONSTRAINT SHOW_PK PRIMARY KEY (SHOW_ID), 
+    CONSTRAINT SHOW_MOVIE_FK FOREIGN KEY (MOVIE_ID)
+        REFERENCES MOVIES (MOVIE_ID),
+    CONSTRAINT SHOW_HALL_FK FOREIGN KEY (HALL_NUMBER)
+        REFERENCES HALLS (HALL_NUMBER)
+);
+Insert INTO show_time(show_id, movie_id, hall_number , show_date, start_time, end_time)
+Values ('1','T001',1,DATE '2026-07-27',TIMESTAMP'2026-07-27 13:00:00',TIMESTAMP'2026-07-27 15:00:00');
+Insert INTO show_time(show_id, movie_id, hall_number , show_date, start_time, end_time)
+Values ('2','T001',3,DATE '2026-07-27',TIMESTAMP'2026-07-27 17:00:00',TIMESTAMP'2026-07-27 19:00:00');
+Insert INTO show_time(show_id, movie_id, hall_number , show_date, start_time, end_time)
+Values ('3','T002',1,DATE '2026-07-27',TIMESTAMP'2026-07-27 15:30:00',TIMESTAMP'2026-07-27 17:30:00');
+Insert INTO show_time(show_id, movie_id, hall_number , show_date, start_time, end_time)
+Values ('4','T002',3,DATE '2026-07-27',TIMESTAMP'2026-07-27 20:00:00',TIMESTAMP'2026-07-27 22:00:00');
+Insert INTO show_time(show_id, movie_id, hall_number , show_date, start_time, end_time)
+Values ('5','T003',2,DATE '2026-07-27',TIMESTAMP'2026-07-27 18:00:00',TIMESTAMP'2026-07-27 20:00:00');
